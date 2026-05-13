@@ -38,7 +38,7 @@ Covers: technical topics (SQL, Python, data, cloud), professional interpersonal 
 |------|------|-------------|----------------|
 | 01 | Diagnose | 3 questions: topic, familiarity, modality. Builds learner profile. | None — uses AskUserQuestion tool |
 | 02 | Search + Deliver | Route by modality. Call the right Coursera tool. Deliver the experience. | search_courses · search_videos · search_hands_on_learning · coursera_roleplay_practice |
-| 03 | Career Counselor | Helps to pull the right learning path as a step forward: from one-shot recommendations to a personalized rec + path. | get_course_material · search_courses |
+| 03 | Career Counselor | Helps to pull the right learning path as a step forward: from one-shot recommendations to a personalized rec + path. | get_course_materials · search_courses |
 
 ## Routing
 
@@ -57,7 +57,7 @@ Covers: technical topics (SQL, Python, data, cloud), professional interpersonal 
 | search_videos | Step 2 (video path) | Surface one targeted video |
 | search_hands_on_learning | Step 2 (project path) | Surface guided project options |
 | coursera_roleplay_practice | Step 2 (roleplay path) | Deliver live roleplay experience |
-| get_course_material | Step 3 | Pull course curriculum for personalized recommendation |
+| get_course_materials | Step 3 | Pull course curriculum for personalized recommendation |
 
 ## Step Instructions
 
