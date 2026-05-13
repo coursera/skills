@@ -12,10 +12,11 @@ Based on the learner's modality choice from Step 1, call the right Coursera tool
 
 ```
 search_courses(
-  userQuery: "[topic] for [role_context]",
+  courseSearchQuery: "[topic] for [role_context]",
   primarySkill: catalog_search_params.primarySkill,
   userSkillLevel: catalog_search_params.userSkillLevel,
-  role: catalog_search_params.role
+  role: catalog_search_params.role,
+  userQuery: "[learner's original message]"  // Optional
 )
 ```
 
@@ -37,9 +38,10 @@ After presenting: "Any of these feel right, or want me to tell you more about on
 
 ```
 search_hands_on_learning(
-  userQuery: "[topic] project for [role_context]",
+  handsonLearningQuery: "[topic] project for [role_context]",
   primarySkill: catalog_search_params.primarySkill,
-  userSkillLevel: catalog_search_params.userSkillLevel
+  userSkillLevel: catalog_search_params.userSkillLevel,
+  userQuery: "[learner's original message]"  // Optional
 )
 ```
 
@@ -55,9 +57,10 @@ search_hands_on_learning(
 
 ```
 search_videos(
-  userQuery: "[topic] for [role_context]",
+  videoSearchQuery: "[topic concept to explain]",
   primarySkill: catalog_search_params.primarySkill,
-  userSkillLevel: catalog_search_params.userSkillLevel
+  userSkillLevel: catalog_search_params.userSkillLevel,
+  userQuery: "[learner's original message]"  // Optional
 )
 ```
 
@@ -85,12 +88,14 @@ coursera_roleplay_practice(
   roleplayTitle:         "[topic] for [role_context]",
   roleplayDescription:   "[brief description of what they'll practice]",
   roleplaySituation:     "[specific, grounded in role_context and learner's input]",
+  roleplaySkills:        ["[specific skill 1]", "[specific skill 2]"],
   roleplayUserRole:      "[their role]",
   roleplayOtherRole:     "[character — personality, motivations, calibrated to proficiency]",
   roleplayOtherRoleName: "[name]",
-  roleplaySkills:        ["[specific skill 1]", "[specific skill 2]"],
   roleplayTasks:         ["[concrete thing the learner must accomplish]"],
-  courseSearchQuery:     "[topic] [role_context]"
+  userQuery:             "[learner's original message]",  // Optional
+  courseSearchQuery:     "[topic] [role_context]",
+  extendSession:         false                            // Optional
 )
 ```
 

@@ -52,8 +52,8 @@ Use catalog tools to present three tiers:
 | Tier | Content | Tool |
 |------|---------|------|
 | **Next step** | The course just recommended. Why now, how long. | Already retrieved in previous steps |
-| **This week / month** | 1 specialization or learning path. Key metadata: duration, partner, level. | `search_specialisations` or `search_learning_paths` |
-| **Long-term** | A certification that provides proof of competency. Connect explicitly to their career context. | `search_certifications` |
+| **This week / month** | A deeper or broader course on the same topic. | `search_courses` |
+| **Long-term** | A professional credential or certification program. Connect explicitly to their career context. | `search_courses` |
 
 Always connect the long-term path to career impact:
 

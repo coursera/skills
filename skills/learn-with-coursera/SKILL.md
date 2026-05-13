@@ -34,33 +34,30 @@ Covers: technical topics (SQL, Python, data, cloud), professional interpersonal 
 
 ## Pipeline
 
-| Step | Name             | What happens                                                                                                         | Coursera tools                                                                               |
-| ---- | ---------------- | -------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
-| 01   | Diagnose         | 3 questions: topic, familiarity, modality. Builds learner profile.                                                   | None — uses AskUserQuestion tool                                                             |
-| 02   | Search + Deliver | Route by modality. Call the right Coursera tool. Deliver the experience.                                             | search_courses · search_videos · search_hands_on_learning · coursera_roleplay_practice       |
-| 03   | Career Counselor | Helps to pull the right learning path as a step forward: from one-shot recommendations to a personalized rec + path. | get_course_material · search_specialisations · search_certifications · search_learning_paths |
+| Step | Name | What happens | Coursera tools |
+|------|------|-------------|----------------|
+| 01 | Diagnose | 3 questions: topic, familiarity, modality. Builds learner profile. | None — uses AskUserQuestion tool |
+| 02 | Search + Deliver | Route by modality. Call the right Coursera tool. Deliver the experience. | search_courses · search_videos · search_hands_on_learning · coursera_roleplay_practice |
+| 03 | Career Counselor | Helps to pull the right learning path as a step forward: from one-shot recommendations to a personalized rec + path. | get_course_material · search_courses |
 
 ## Routing
 
-| Learner picks      | Modality | Coursera tool              | Output                                                                                                              |
-| ------------------ | -------- | -------------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| Show me a course   | course   | search_courses             | 1–2 course cards                                                                                                    |
-| Hands-on project   | project  | search_hands_on_learning   | 1–2 guided projects                                                                                                 |
-| Bite-size video    | video    | search_videos              | 1 video                                                                                                             |
+| Learner picks | Modality | Coursera tool | Output |
+|--------------|----------|---------------|--------|
+| Show me a course | course | search_courses | 1–2 course cards |
+| Hands-on project | project | search_hands_on_learning | 1–2 guided projects |
+| Bite-size video | video | search_videos | 1 video |
 | Give me a roleplay | roleplay | coursera_roleplay_practice | Live roleplay — AskUserQuestion used to personalize scenario and roleplay partner behaviour before calling the tool |
 
 ## Coursera Tools Reference
 
-| Tool                       | Used in step                 | Purpose                                                |
-| -------------------------- | ---------------------------- | ------------------------------------------------------ |
-| search_courses             | Step 2 (course path), Step 3 | Surface course options; power career counselor step    |
-| search_videos              | Step 2 (video path)          | Surface one targeted video                             |
-| search_hands_on_learning   | Step 2 (project path)        | Surface guided project options                         |
-| coursera_roleplay_practice | Step 2 (roleplay path)       | Deliver live roleplay experience                       |
-| get_course_material        | Step 3                       | Pull course curriculum for personalized recommendation |
-| search_specialisations     | Step 3                       | Recommend deeper multi-course paths                    |
-| search_certifications      | Step 3                       | Recommend credentials for career goals                 |
-| search_learning_paths      | Step 3                       | Recommend structured journeys                          |
+| Tool | Used in step | Purpose |
+|------|-------------|---------|
+| search_courses | Step 2 (course path), Step 3 | Surface course options; power career counselor step |
+| search_videos | Step 2 (video path) | Surface one targeted video |
+| search_hands_on_learning | Step 2 (project path) | Surface guided project options |
+| coursera_roleplay_practice | Step 2 (roleplay path) | Deliver live roleplay experience |
+| get_course_material | Step 3 | Pull course curriculum for personalized recommendation |
 
 ## Step Instructions
 
