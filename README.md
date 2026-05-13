@@ -59,10 +59,7 @@ tools:
 | `search_videos`              | Find a targeted short video                                   |
 | `search_hands_on_learning`   | Find guided projects or hands-on learning experiences         |
 | `coursera_roleplay_practice` | Start a live roleplay practice session                        |
-| `get_course_material`        | Retrieve curriculum details for a selected course             |
-| `search_specialisations`     | Find multi-course specialization paths                        |
-| `search_certifications`      | Find credential-oriented paths                                |
-| `search_learning_paths`      | Find structured learning journeys                             |
+| `get_course_materials`       | Retrieve curriculum details for a selected course             |
 
 Tool schemas live in the consuming MCP app. Keep the skill prose aligned with
 those schemas when tool names, parameter names, or result shapes change.
