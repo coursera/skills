@@ -43,18 +43,3 @@ If the course isn't the right fit based on the curriculum: say so and recommend 
 
 > "For someone in the L&D field, who can run basic queries but wants to stop relying on colleagues for data pulls, **SQL for Data Science** by UC Davis is a great fit. It has a 4.6 ⭐ from 28,000 reviews, and it covers exactly the query patterns L&D analysts use: aggregations, joins, and filtering by date ranges. It's designed for non-engineers who need to work with data professionally."
 
----
-
-## Step 4 — Build the Forward Path
-
-Use catalog tools to present three tiers:
-
-| Tier | Content | Tool |
-|------|---------|------|
-| **Next step** | The course just recommended. Why now, how long. | Already retrieved in previous steps |
-| **This week / month** | 1 specialization or learning path. Key metadata: duration, partner, level. | `search_specialisations` or `search_learning_paths` |
-| **Long-term** | A certification that provides proof of competency. Connect explicitly to their career context. | `search_certifications` |
-
-Always connect the long-term path to career impact:
-
-> "For an L&D analyst, being able to pull your own data from SQL is increasingly what separates people who influence decisions from people who wait for reports. The Google Data Analytics Certificate builds exactly that credential."
